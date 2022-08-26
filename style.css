@@ -18,7 +18,8 @@
     margin-left: 500px;
 }
 .hero nav .links a{
-    padding-right: 20px;
+    margin-right: 20px;
+    padding-bottom: 8px;
     position: relative;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
@@ -27,8 +28,14 @@
 .hero nav .links a::after{
     content: "";
     position: absolute;
-    background-color: white;
+    left: 0;
+    bottom: 0;
+    background-color: white; 
     height: 3px ;
+    width: 0;
+}
+.hero nav .links a:hover::after{
+    transition: 0.5s;
     width: 100%;
 }
 .hero nav{
@@ -41,7 +48,6 @@
     margin-left: 120px;
     font-family: 'Josefin Sans', sans-serif;
 }
-
 .hero .p1{
     padding-top:30px;
     padding-left: 30px;
@@ -56,13 +62,13 @@
     margin-top: 50px;
 }
 .section section{
-    margin: 90px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
-    justify-content: center; 
     align-items: center;
     position: relative;
-    margin-right: 230px;
-
+    width: 80%;
+    margin-left: 10%;
 }
 .section section img{
     width: 700px;
@@ -70,64 +76,115 @@
     
 }
 .section section .writing{
-    
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
     background-color: white;
-    padding: 20px 30px;
-    left: 66%;
-    top:205px;
+    position: absolute;
+    padding: 10px 20px;
+    left: 55%;
+    top:225px;
 }
 .section section .writing h1{
-    color: rgb(47, 36, 36);
+    color:  rgb(47, 36, 36);
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     font-size: 35px;
-
 }
 .section section .writing p{
-    color: gray;
-    
+    color: grey;
+}    
+/* }
+.section section .writing:hover{
+    transition: 0.5s;
+    width: 35%;
+    background-color: white;
+} */
+.section1{
+    position: ;
 }
 .section1 section{
-}
-.section1 section .images{
-    width: 90%;
-    margin-left: 100px;
+    position: relative;
+} 
+.section1 section .flexbox{
+    margin-left: 10%;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    justify-content: space-around;
-    gap: 40px;
-    padding-left: 50px;
-}
-.section1 section .images img{
-    position: relative;
-    width:250px;
-    height: 400px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-}
-.section1 section .nav2{
     display: flex;
-    padding-top: 150px;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 30px;
 }
-.section1 section p{
+.section1 section .flexbox div p{
+    position: relative;
     font-family: 'Open Sans', sans-serif;
+    opacity: 90%;
+    margin-top: 270px;
+    margin-left: 30px;
     font-size: 30px;
-    margin-left: 170px;
 }
-.section1 section button{
-    margin-left: 0px;
-    padding: 10px 50px;
-    margin-right: 170px;
-    border: 1px solid grey;
-    background-color: white;
+.section1 section .flexbox div:hover{
+    opacity: 80%;
 }
-.section1 section button:hover{
-    background-color: black;
+.section1 section .flexbox div{
+    width: 230px;
+    height: 350px ;     
+}
+.i1{
+    position: relative;
     color: white;
+    background: url(./images/image-deep-earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i2{
+    position: relative;
+    color: white;
+    background: url(./images/image-night-arcade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i3{
+    position: relative;
+    color: white;
+    background: url(./images/image-soccer-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i4{
+    position: relative;
+    color: white;
+    background: url(./images/image-grid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i5{
+    position: relative;
+    color: white;
+    background: url(./images/image-from-above.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i6{
+    position: relative;
+    color: white;
+    background: url(./images/image-pocket-borealis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i7{
+    position: relative;
+    color: white;
+    background: url(./images/image-curiosity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.i8{
+    position: relative;
+    color: white;
+    background: url(./images/image-fisheye.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #footer footer{
     background-color: black;
@@ -142,15 +199,49 @@
     padding-top: 20px;
 }
 #footer footer .link2 a{
+    padding-bottom: 8px;
+    position: relative;
     text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
-    padding-right: 20px;
 }
 #footer footer .link2{
     margin-top: 20px;
     padding-bottom: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
-#footer footer .link2 a:hover{
-    text-decoration: underline;
+#footer footer .link2 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white; 
+    height: 3px ;
+    width: 0;
+}
+#footer footer .link2 a:hover::after{
+    width: 100%;
+}
+.nav2{
+    margin-left: 10%;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    margin-bottom: 150px;
+}
+.nav2 p{
+    font-size: 35px;
+    font-weight: 100;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 95%;
+}
+.nav2 button{
+    padding: 10px 50px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.nav2 button:hover{
+    background-color: black;
+    color:white;
 }

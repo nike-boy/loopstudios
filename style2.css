@@ -1,0 +1,87 @@
+*{
+    /* border: 1px solid yellow; */
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image:linear-gradient( to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./images/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* margin: 0; */
+    height: 550px;
+}
+.hero nav .links{
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 500px;
+}
+.hero nav .links a{
+    margin-right: 20px;
+    padding-bottom: 8px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+.hero nav .links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white; 
+    height: 3px ;
+    width: 0;
+}
+.hero nav .links a:hover::after{
+    transition: 0.5s;
+    width: 100%;
+}
+.hero nav{
+    color: white;
+    display: flex;
+}
+.hero nav h1{
+    font-size: 35px;
+    margin: 50px;
+    margin-left: 120px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.hero .p1{
+    padding-top:30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: white;
+    border: 1px solid white;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    max-width: 400px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+section .contact-form input{
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 10px 60px ;
+}
+section .contact-form form{
+padding-left: 30px;
+}
+
+section .contact-form{
+    margin-left: 100px;
+    margin-top: 50px;
+    max-width:30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section .contact-form button{
+    font-weight: 700;
+    border: none;
+    background-color: rgb(127, 116, 116);
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 10px 132px;
+}
